@@ -1,0 +1,17 @@
+name: 'Setup Smuggler'
+description: 'Setup a Smuggler Web Server to help move files out of Docker Builds.'
+branding:
+  icon: 'arrow-up-circle'
+  color: 'white'
+inputs:
+  general_port:
+    description: 'The port to startup the Smuggler Server on.'
+    required: false
+    default: 4500
+  save_path:
+    description: 'Where to save the uploaded files.'
+    required: false
+    default: '/smuggler/saved'
+runs:
+  using: 'docker'
+  image: 'Dockerfile'
