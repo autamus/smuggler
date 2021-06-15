@@ -14,7 +14,7 @@ type Config struct {
 
 type general struct {
 	Version string
-	Port    int64
+	Port    string
 }
 
 type save struct {
@@ -33,7 +33,7 @@ func init() {
 
 func defaultConfig() {
 	Global.General.Version = "0.0.1"
-	Global.General.Port = 8080
+	Global.General.Port = "4500"
 	Global.Save.Path = "smuggled/"
 }
 
