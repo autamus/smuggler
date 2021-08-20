@@ -5,4 +5,5 @@ sh -c "docker run -d \
                   -e INPUT_SAVE_PATH=$INPUT_SAVE_PATH \
                   -v $INPUT_SAVE_PATH:$INPUT_SAVE_PATH \
                   --restart always \
+                  --name smuggler \
                   ghcr.io/autamus/smuggler:latest"
