@@ -6,4 +6,5 @@ sh -c "docker run -d \
                   -v $INPUT_SAVE_PATH:$INPUT_SAVE_PATH \
                   --restart always \
                   --name smuggler \
-                  ghcr.io/autamus/smuggler:latest"
+                  ghcr.io/autamus/smuggler:latest \
+                  && docker ps"
